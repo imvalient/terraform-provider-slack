@@ -1,7 +1,9 @@
 package main
 
-import "github.com/hashicorp/terraform-plugin-sdk/plugin"
-import "github.com/imvalient/terraform-provider-slack"
+import (
+	"github.com/hashicorp/terraform-plugin-sdk/plugin"
+	"github.com/imvalient/terraform-provider-slack/slack"
+)
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
